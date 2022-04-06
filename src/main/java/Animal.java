@@ -1,2 +1,3 @@
-public abstract class Animal implements INoiseMaker{
+public abstract class Animal implements INoiseMaker, IEater{
+
 }

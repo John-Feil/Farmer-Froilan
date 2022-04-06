@@ -1,6 +1,8 @@
 public class FarmVehicle extends Vehicles{
     //should be able to operate on a farm
-    public void operate(){
-
+//    public Farm farm;
+    public void operate(Farm farm){
+        System.out.println("Operates");
     }
+
 }

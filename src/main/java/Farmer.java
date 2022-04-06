@@ -8,7 +8,9 @@ public class Farmer extends Person implements IBotanist, IRider{
     }
 
     @Override
-    public void plant() {
+    public void plant(CropRow cropRow, Crop crop) {
+        System.out.println("Planting crop into crop row");
         //plant a crop in a croprow
     }
+
 }

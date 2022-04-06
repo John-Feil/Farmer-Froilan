@@ -1,4 +1,4 @@
 public interface IEdibleegg {
-   // public void boolean (hasbeenFertilized);
-   void  (boolean hasBeenFertilized);
+    public void boolean (hasbeenFertilized);
+
 }

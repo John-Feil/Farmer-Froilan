@@ -1,3 +1,3 @@
 public interface IBotanist {
-    public void plant(); // Can plant a Crop in a CropRow
+    public void plant(CropRow cropRow, Crop crop); // Can plant a Crop in a CropRow
 }

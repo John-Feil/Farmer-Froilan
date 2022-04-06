@@ -4,7 +4,8 @@ public abstract class Person implements IEater, INoiseMaker {
         return("People sounds!");
     }
     @Override
-    public void eat(){
-        //Can eat edible object
+    public void eat(Edible object) {
+        System.out.println("Eats " + object);
+
     }
 }

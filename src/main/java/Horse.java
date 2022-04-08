@@ -8,4 +8,9 @@ public class Horse extends Animal implements IRideable{
     public String makeNoise() {
         return "Nay";
     }
+
+    @Override
+    public String toString() {
+        return "Horse";
+    }
 }

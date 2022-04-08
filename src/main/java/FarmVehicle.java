@@ -5,4 +5,8 @@ public class FarmVehicle extends Vehicles{
         System.out.println("Operates");
     }
 
+    @Override
+    public String toString() {
+        return "FarmVehicle";
+    }
 }

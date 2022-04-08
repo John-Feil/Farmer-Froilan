@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class CropRow extends Crop{
     //croprow stores crops
-    private ArrayList<Crop> cropsInCropRow;
+    private ArrayList<Crop> cropsInCropRow = new ArrayList<>();
 
     public CropRow(ArrayList<Crop> crops){
         this.cropsInCropRow = crops;
@@ -42,5 +42,12 @@ public class CropRow extends Crop{
         else {
             System.out.println("Not Harvested ");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "CropRow{" +
+                "cropsInCropRow=" + cropsInCropRow +
+                '}';
     }
 }

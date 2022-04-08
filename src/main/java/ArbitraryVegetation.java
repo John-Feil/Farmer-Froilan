@@ -23,4 +23,9 @@ public class ArbitraryVegetation extends Crop{
             System.out.println("Not fertilized Corn");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Arbitrary Vegetation";
+    }
 }

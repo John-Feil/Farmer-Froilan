@@ -91,5 +91,7 @@ public class Main {
         Farm1.addVehicle(farmVehicle1);
         Farm1.addVehicle(farmVehicle2);
         Farm1.addVehicle(cropDuster1);
+
+        System.out.println(Farm1);
     }
 }

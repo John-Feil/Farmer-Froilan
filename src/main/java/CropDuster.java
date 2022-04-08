@@ -7,4 +7,9 @@ public class CropDuster extends FarmVehicle implements IAircraft{
         System.out.println("Crop duster fertilizes crop row");
         //should fertilize crop row
     }
+
+    @Override
+    public String toString() {
+        return "CropDuster";
+    }
 }

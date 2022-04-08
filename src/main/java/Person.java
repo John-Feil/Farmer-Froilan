@@ -8,4 +8,9 @@ public abstract class Person implements IEater, INoiseMaker {
         System.out.println("Eats " + object);
 
     }
+
+    @Override
+    public String toString() {
+        return "Person";
+    }
 }

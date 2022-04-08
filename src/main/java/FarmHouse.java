@@ -1,4 +1,12 @@
+import java.util.ArrayList;
+
 public class FarmHouse {
-    public Person [] person;
-    // Composition relationship w/ Farmer
+    private ArrayList<Person> peopleInFarmHouse;
+
+    public ArrayList<Person> getPeopleInFarmHouse(){
+        return this.peopleInFarmHouse;
+    }
+    public void addPersonToFarmHouse(Person person){
+        this.peopleInFarmHouse.add(person);
+    }
 }

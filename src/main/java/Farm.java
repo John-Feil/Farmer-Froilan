@@ -1,9 +1,22 @@
-public class Farm {
-    public Stable [] stable;
-    public ChickenCoop [] chickenCoop;
-    public FarmHouse farmHouse;
+import java.util.ArrayList;
 
-    //connect to stable
-    // chickencoop
-    // farmhouse
+public class Farm {
+    private Stable[] stable;
+    private ChickenCoop[] chickenCoop;
+    private FarmHouse farmHouse;
+    private Field field;
+    private ArrayList<FarmVehicle> vehiclesInFarm;
+
+    public Farm(Stable [] stables, ChickenCoop [] chickenCoop, FarmHouse farmHouse ){
+        this.stable = stables;
+        this.chickenCoop = chickenCoop;
+        this.farmHouse = farmHouse;
+    }
+    public void addField(Field field){
+        this.field = field;
+    }
+    public void addVehicle (FarmVehicle vehicle){
+        this.vehiclesInFarm.add(vehicle);
+    }
+
 }

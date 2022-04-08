@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Farmer Froilan = new Farmer();
-        Farm Farm1 = new Farm();
+        Farmer froilan = new Farmer();
 
         // Creating Crop objects
         Crop corn = new EarCorn(), tomato = new Tomato(),wheat = new ArbitraryVegetation();
@@ -25,8 +24,12 @@ public class Main {
 
         CropDuster cropDuster1 = new CropDuster();
 
-        Pilot Froilanda = new Pilot();
-        Froilanda.usesAircraft(cropDuster1);
+        Pilot froilanda = new Pilot();
+        froilanda.usesAircraft(cropDuster1);
+
+        FarmHouse farmHouse = new FarmHouse();
+        farmHouse.addPersonToFarmHouse(froilanda);
+        farmHouse.addPersonToFarmHouse(froilan);
 
         //Creating chicken objects
         Chicken chicken1 = new Chicken(),chicken2 = new Chicken(),chicken3 = new Chicken();
@@ -52,6 +55,12 @@ public class Main {
         ChickenCoop chickenCoop3 = new ChickenCoop(chickenCoopArr3);
         ChickenCoop chickenCoop4 = new ChickenCoop(chickenCoopArr4);
 
+        ChickenCoop[] chickenCoopsArr = new ChickenCoop[4];
+        chickenCoopsArr[0] = chickenCoop1;
+        chickenCoopsArr[1] = chickenCoop2;
+        chickenCoopsArr[2] = chickenCoop3;
+        chickenCoopsArr[3] = chickenCoop4;
+
         //Creating horse objects
         Horse horse1 = new Horse(),horse2 = new Horse(),horse3 = new Horse(),horse4 = new Horse();
         Horse horse5 = new Horse(),horse6 = new Horse(),horse7 = new Horse(),horse8 = new Horse();
@@ -70,5 +79,17 @@ public class Main {
         Stable Stable1 = new Stable(horseStable1);
         Stable Stable2 = new Stable(horseStable2);
         Stable Stable3 = new Stable(horseStable3);
+
+        Stable [] stablesArr = new Stable[3];
+        stablesArr[0] = Stable1;
+        stablesArr[1] = Stable2;
+        stablesArr[2] = Stable3;
+
+        //Making farm
+        Farm Farm1 = new Farm(stablesArr,chickenCoopsArr,farmHouse);
+        Farm1.addField(field1);
+        Farm1.addVehicle(farmVehicle1);
+        Farm1.addVehicle(farmVehicle2);
+        Farm1.addVehicle(cropDuster1);
     }
 }

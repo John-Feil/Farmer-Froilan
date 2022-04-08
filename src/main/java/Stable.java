@@ -4,8 +4,8 @@ public class Stable {
     private ArrayList<Horse> horseInStable;
 
     public Stable(Horse [] horses){
-        for (int i = 0; i < horses.length; i++){
-            this.horseInStable.add(horses[i]);
+        for (Horse hors : horses) {
+            this.horseInStable.add(hors);
         }
     }
 

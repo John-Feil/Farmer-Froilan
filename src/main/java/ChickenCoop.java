@@ -4,8 +4,8 @@ public class ChickenCoop {
     private ArrayList<Chicken> chickenInCoop;
 
     public ChickenCoop(Chicken [] chickens){
-        for (int i = 0; i < chickens.length; i++){
-            this.chickenInCoop.add(chickens[i]);
+        for (Chicken chicken : chickens) {
+            this.chickenInCoop.add(chicken);
         }
     }
 

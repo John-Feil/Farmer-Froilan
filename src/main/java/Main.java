@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         Farmer Froilan = new Farmer();
@@ -48,7 +46,7 @@ public class Main {
         chickenCoopArr3[1] = chicken10; chickenCoopArr3[2] = chicken11; chickenCoopArr3[3] = chicken12;
         chickenCoopArr4[0] = chicken13; chickenCoopArr4[1] = chicken14; chickenCoopArr4[2] = chicken15;
 
-        //Making Chickencoop objects with chickens
+        //Making ChickenCoop objects with chickens
         ChickenCoop chickenCoop1 = new ChickenCoop(chickenCoopArr1);
         ChickenCoop chickenCoop2 = new ChickenCoop(chickenCoopArr2);
         ChickenCoop chickenCoop3 = new ChickenCoop(chickenCoopArr3);

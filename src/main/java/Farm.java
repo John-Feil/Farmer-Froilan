@@ -1,7 +1,8 @@
 public class Farm {
-    public Stable [] stable;
-    public ChickenCoop [] chickenCoop;
-    public FarmHouse farmHouse;
+    private Stable stable;
+    private ChickenCoop chickenCoop;
+    private FarmHouse farmHouse;
+
 
     //connect to stable
     // chickencoop

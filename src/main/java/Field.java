@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Field extends CropRow{
     //Arraylist of many crop row
-    private ArrayList<CropRow> cropRowsInField;
+    private ArrayList<CropRow> cropRowsInField = new ArrayList<>();
 
     public Field(CropRow cropRows){
         this.cropRowsInField.add(cropRows);
@@ -20,5 +20,12 @@ public class Field extends CropRow{
     }
     public void addCropRowToField(CropRow cropRow){
         this.cropRowsInField.add(cropRow);
+    }
+
+    @Override
+    public String toString() {
+        return "Field{" +
+                ", cropRowsInField=" + cropRowsInField +
+                '}';
     }
 }

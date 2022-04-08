@@ -37,4 +37,9 @@ public class Chicken extends Animal implements IProduce{
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "Chicken";
+    }
 }

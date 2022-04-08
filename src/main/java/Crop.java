@@ -8,4 +8,5 @@ public abstract class Crop implements IProduce {
     //flags
     boolean hasBeenHarvested;
     boolean hasBeenFertilized;
+
 }

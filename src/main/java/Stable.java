@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Stable {
-    private ArrayList<Horse> horseInStable;
+    private ArrayList<Horse> horseInStable = new ArrayList<>();
 
     public Stable(Horse [] horses){
         for (Horse hors : horses) {
@@ -17,5 +17,11 @@ public class Stable {
         this.horseInStable.add(horse);
     }
 
-    //connect to horse
+    @Override
+    public String toString() {
+        return "Stable{" +
+                "horseInStable=" + horseInStable +
+                '}';
+    }
+//connect to horse
 }
